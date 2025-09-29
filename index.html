@@ -51,11 +51,20 @@
 
     <script>
         function cargar(pagina) {
-            document.getElementById("visor").src = pagina;
+            document.getElementById("inicio").style.display = "none";
+            let visor = document.getElementById("visor");
+            visor.style.display = "block";
+            visor.src = pagina;
+        }
+
+        function mostrarInicio() {
+            document.getElementById("visor").style.display = "none";
+            document.getElementById("inicio").style.display = "block";
         }
     </script>
 </body>
 </html>
+
 
 
 
