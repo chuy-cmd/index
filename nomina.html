@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nómina</title>
+  <link rel="stylesheet" href="style/calculadora.css">
+</head>
+<body>
+  <div class="calculadora">
+    <label for="empleado">ID Empleado</label>
+    <input type="text" id="empleado" autocomplete="off" />
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" autocomplete="off" />
+
+    <label for="horas">Horas trabajadas</label>
+    <input type="text" id="horas" autocomplete="off" />
+
+    <label for="costo">Costo por hora</label>
+    <input type="text" id="costo" autocomplete="off" />
+
+    <label for="h_norm">Horas normales</label>
+    <input type="text" id="h_norm" readonly />
+
+    <label for="h_extra">Horas extra</label>
+    <input type="text" id="h_extra" readonly />
+
+    <label for="sub_t">Subtotal</label>
+    <input type="text" id="sub_t" readonly />
+
+    <label for="ispt">ISPT</label>
+    <input type="text" id="ispt" readonly />
+
+    <label for="monto">Monto neto</label>
+    <input type="text" id="monto" readonly />
+
+    <div class="botones">
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="limpiar()">Limpiar</button>
+    </div>
+  </div>
+  <script src="js/nomina.js"></script>
+</body>
+</html>

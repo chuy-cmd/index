@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Programas</title>
+    <link rel="stylesheet" href="style/estilo_ind.css">
+</head>
+<body>
+    <header>
+        <h1>Menú Principal</h1>
+    </header>
+
+    <nav>
+        <button onclick="cargar('inicio.html')">Inicio</button>
+        <button onclick="cargar('calculadora.html')">Calculadora</button>
+        <button onclick="cargar('cuadrado.html')">Cuadrado</button>
+        <button onclick="cargar('nomina.html')">Nómina</button>
+    </nav>
+
+    <main>
+    <iframe id="visor" src="inicio.html" style="width:95%;height:600px;border:none;"></iframe>
+    </main>
+
+    <script>
+        function cargar(pagina) {
+            document.getElementById("visor").src = pagina;
+        }
+    </script>
+</body>
+</html>
